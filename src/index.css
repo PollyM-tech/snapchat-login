@@ -1,102 +1,69 @@
-:root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.container {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  height: 100vh;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
+.left-section {
+  background-color: #000; 
+  padding: 2rem;
 }
 
-body {
-  margin: 0;
+.right-section {
+  background-color: #575050;
+  overflow-y: auto;
   display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  flex-direction: column;
+  gap: 2rem;
+  height: 100vh; 
+  box-sizing: border-box; 
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
-.container{
-  position: relative;
-  display:grid;
-  grid-template-columns: 25% 75%;
-  height: 70%;
-  gap: 20px;
-  background:#2c2a04;
-}
-.slogan{
-  position:absolute;
-  margin-top: 10px;
-  margin-left: 40%;
-  width: 50%;
-  z-index: 2;
-  text-align: center;
-}
-.background-image{
-  height: 55%;
-  margin-bottom: 30%;
-  margin-top:30%;
-  margin-left: 40%;
-  margin-right: 0;
-  z-index: 1;
-}
-.container::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+
+.hero-box {
   background-color: #2c2a04;
-  z-index: 0;
+  border-radius: 20px;
+  padding: 2rem;
+  margin: 1rem;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+.slogan-image {
+  max-width: 80%;
+  height: auto;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
+.people-image {
+  max-width: 90%;
+  height: auto;
+}
+
+.middle-content {
+  height: 280px;
+  width: 100%;
+  background-color: #423c3c; 
+}
+
+.footer-placeholder {
+  height: 60px;
+  width: 100%;
+  background-color: #363030; 
+}
+
+
+@media screen and (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr;
   }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
+
+  .right-section {
+    height: auto;
   }
 }
+
+
