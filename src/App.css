@@ -65,6 +65,98 @@
   cursor: pointer;
 }
 
+    /*LogIn css starts here*/
+.APP {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f4f4f4;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.Container {
+  display: flex;
+  background: #fff;
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+  border-radius: 12px;
+  overflow: hidden;
+  width: 90%;
+  max-width: 900px;
+}
+
+.left {
+  flex: 1;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.left h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.left p {
+  margin: 10px 0;
+}
+
+.left input {
+  margin: 8px 0;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.left button {
+  margin: 20px 0;
+  padding: 12px;
+  background-color: #0078D7; /* Microsoft Blue */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.left button:hover {
+  background-color: #005ea2;
+}
+
+.Logo {
+  width: 120px;
+  height: auto;
+  margin: 10px 0;
+}
+        /*LogIn css ends here*/
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
 /* New styles to ensure footer is at the bottom of the page */
 
 .app-container {

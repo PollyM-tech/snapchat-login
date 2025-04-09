@@ -1,3 +1,9 @@
+import { useState } from 'react'
+import reactLogo from './assets/react.svg'
+import viteLogo from '/vite.svg'
+import './App.css'
+import BodyContent from './components/content'
+import LogIn from './components/login'
 import React from "react";
 import Navbar from "./components/Navbar"; // Import Navbar
 import Footer from "./components/Footer"; // Import Footer
@@ -10,15 +16,17 @@ function App() {
       <Navbar />
 
       {/* Main Content Section */}
-      <main className="main-content">
-        <h1></h1>
-        {/* Add other content here */}
-      </main>
+      <div className='container'>
+        <div className='left-section'>
+          <LogIn/>
+        </div>
+        <BodyContent/>
+      </div>
 
       {/*  */}
       <Footer />
     </div>
-  );
+  )
 }
 
 export default App;
