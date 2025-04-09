@@ -136,11 +136,29 @@ h4{
   align-items: center; /* Align items vertically */
   background-color: white; /* Background color */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  position: fixed;
+  top: 0;
+  left: 0; 
+  width: 100vw; 
+  padding: 10px;
 }
 
 .header-left {
   display: flex;
   align-items: center; /* Center items vertically */
+}
+.snapchat-icon {
+  background-color: transparent; /* No background by default */
+  padding: 10px; /* Spacing around the icon */
+  transition: color 0.3s ease, background-color 0.3s ease;
+  border-radius: 0; /* Ensures it's a square */
+  margin-left: 10px;
+}
+
+.snapchat-icon:hover {
+  color: black; /* Icon turns black */
+  background-color: yellow; /* Background becomes yellow */
+  border-radius: 5px; /* Slight rounding */
 }
 
 .header-search {
@@ -151,15 +169,18 @@ h4{
 }
 
 .search-input {
-  padding: 10px 10px; /* Vertical and horizontal padding */
-  padding-left: 40px; /* Ensure space for the icon */
-  border: 1px solid #ccc; /* Light border for visibility */
+  padding: 20px; /* Vertical and horizontal padding */
+  padding-left: 40px;
+  border: none; /* Light border for visibility */
   border-radius: 20px; /* Rounded corners */
   height: 30px; /* Set height for uniformity */
-  width: 100%; /* Full width of the container */
+  width: 200px; /* Full width of the container */
   font-size: 16px; /* Font size for the input */
   background: #f1f1f1; /* Light background color */
   outline: none; /* Remove outline */
+}
+.search-input ::placeholder{
+  font-size: small;
 }
 
 .search-icon {
@@ -177,8 +198,68 @@ h4{
   align-items: center; /* Center icons vertically */
 }
 
-.icon {
-  margin: 0 5px; /* Reduced space between icons */
+.icon-container {
+  display: flex;
+  flex-direction: column; /* Stack icon and label vertically */
+  justify-content: center;
+  align-items: center; /* Center align items */
+  text-align: center; /* Center text alignment for labels */
+  position: relative; /* For tooltip positioning */
+  margin: 0 10px; /* Set horizontal margin to increase spacing */
+  padding: auto;
+  border-radius: 10px;
+  width: 56px;
+  height: 56px;
+}
+
+.icon-label {
+  font-size: 12px; /* Adjust font size */
+  color: black; /* Ensure labels are visible against dark background */
+  margin-top: 3px; /* Add some space above the label */
+}
+.icon-container:hover {
+  color: black ; /* Change to dark gray on hover */
+  background-color: rgb(243, 244, 245);  
+  cursor: pointer;
+}
+.icon-wrapper {
+  position: relative;
+  display: flex;
+  background-color: rgb(243, 244, 245);  
+  justify-content: center;
+  align-items: center; /* Center align items */
+  border-radius: 40px;
+  width: 40px;
+  height: 40px;
+}
+.icon-wrapper:hover {
+  background-color: rgb(184, 184, 184);  
+}
+
+.tooltip {
+  visibility: hidden; /* Hidden by default */
+  width: 60px; /* Tooltip width */
+  background-color: black; /* Tooltip background color */
+  color: white; /* Tooltip text color */
+  text-align: center; /* Center text */
+  border-radius: 5px; /* Rounded corners */
+  padding: 5px; /* Padding */
+  position: absolute; /* Positioning below the button */
+  z-index: 1; /* Ensure it appears above other elements */
+  top: 100%; /* Position below the button */
+  left: 50%; /* Center horizontally */
+  margin-left: -30px; /* Adjust left margin to center */
+  opacity: 0; /* Initial opacity */
+  transition: opacity 0.3s; /* Smooth transition */
+}
+
+.icon-wrapper:hover .tooltip {
+  visibility: visible; /* Show tooltip on hover */
+  opacity: 1; /* Fade in */
+}
+.dots-icon {
+  cursor: pointer;
+  font-size: 24px;
 }
 
 .header-buttons {
@@ -186,11 +267,11 @@ h4{
   align-items: center; /* Center buttons vertically */
 }
 
-.btn {
+.header-buttons  .btn {
   background: black;
   color: white;
   border: none;
-  padding: 5px 10px;
+  padding: 10px;
   border-radius: 20px;
   margin-left: 10px; /* Space between buttons */
   cursor: pointer;
@@ -198,7 +279,7 @@ h4{
 
 .left {
   flex: 1;
-  padding: 40px;
+  padding: 60px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -273,9 +354,11 @@ footer {
   width: 100%;
   background-color: black;
   color: white;
-  padding: 2px;
+  padding: 15px;
   text-align: center;
-  position: relative;
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
   display: flex;
   justify-content: center; /* Centers items horizontally */
   align-items: flex-start; /* Centers items vertically */

@@ -4,11 +4,10 @@ import { LiaWalkingSolid } from "react-icons/lia";
 
 const Footer = () => {
   return (
-    <footer className="w-full bg-black text-white text-sm px-6 py-3 flex items-center gap-3">
+    <footer >
       {/* Icons */}
       <div className="flex items-center">
-      <FaWalking className="icon" />
-      <LiaWalkingSolid className="icon" />
+        <FaWalking className="icon" />
       </div>
 
       {/* Text and Link */}

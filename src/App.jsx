@@ -10,7 +10,7 @@ function App() {
   return (
     <>
       {/* Navbar Section */}
-      {/* <Navbar /> */}
+      <Navbar />
 
       {/* Main Content Section */}
       <div className='container'>
@@ -21,7 +21,7 @@ function App() {
       </div>
 
       {/*  */}
-      {/* <Footer /> */}
+      <Footer />
     </>
   )
 }

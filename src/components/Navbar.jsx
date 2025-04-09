@@ -6,7 +6,7 @@ import { CiPlay1 } from "react-icons/ci"; // Spotlight icon
 import { BsChatRight } from "react-icons/bs"; // Chats icon
 import { IoIosCamera } from 'react-icons/io'; // Lenses icon
 import { TbGridDots } from "react-icons/tb"; // Menu icon
-import './Navbar.css'; // For custom styling
+// import './Navbar.css'; // For custom styling
 
 const Navbar = () => {
   return (
@@ -23,17 +23,17 @@ const Navbar = () => {
       {/* Icons Section */}
       <div className="header-icons">
         <div className="icon-container">
-          <LiaGripLinesVerticalSolid size={24} color="#000" className="icon" />
+          <LiaGripLinesVerticalSolid size={20} color="#000" className="icon" />
           <span className="icon-label">Stories</span>
         </div>
 
         <div className="icon-container">
-          <CiPlay1 size={24} color="#000" className="icon" />
+          <CiPlay1 size={20} color="#000" className="icon" />
           <span className="icon-label">Spotlight</span>
         </div>
 
         <div className="icon-container">
-          <BsChatRight size={24} color="#000" className="icon" />
+          <BsChatRight size={20} color="#000" className="icon" />
           <span className="icon-label">Chat</span>
         </div>
 
@@ -43,7 +43,7 @@ const Navbar = () => {
         </div>
 
         <div className="icon-container">
-          <FaSnapchat size={30} color="black" className="icon" />
+          <FaSnapchat size={20} color="black" className="icon" />
           <span className="icon-label">Snapchat+</span>
         </div>
       </div>
@@ -52,10 +52,10 @@ const Navbar = () => {
       <div className="header-buttons">
         {/* Menu Button with Grid Dots Icon and Tooltip */}
         <div className="icon-wrapper">
-        <div className="icon-hover">
-          <TbGridDots size={24} className="dots-icon" />
-          <span className="tooltip">Menu</span> {/* Tooltip element */}
-        </div>
+          <div className="icon-hover">
+            <TbGridDots size={20} className="dots-icon" />
+            <span className="tooltip">Menu</span> {/* Tooltip element */}
+          </div>
         </div>
 
         <button className="btn">Snapchat Ads</button>
