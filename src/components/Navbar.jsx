@@ -6,7 +6,6 @@ import { CiPlay1 } from "react-icons/ci"; // Spotlight icon
 import { BsChatRight } from "react-icons/bs"; // Chats icon
 import { IoIosCamera } from 'react-icons/io'; // Lenses icon
 import { TbGridDots } from "react-icons/tb"; // Menu icon
-// import './Navbar.css'; // For custom styling
 
 const Navbar = () => {
   return (
