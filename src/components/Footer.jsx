@@ -8,6 +8,7 @@ const Footer = () => {
       {/* Icons */}
       <div className="flex items-center">
         <FaWalking className="icon" />
+        <FaWalking className="icon" size={12}/>
       </div>
 
       {/* Text and Link */}

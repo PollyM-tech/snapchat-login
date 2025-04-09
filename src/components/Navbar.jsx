@@ -15,7 +15,7 @@ const Navbar = () => {
       <div className="header-left">
         <FaSnapchat size={40} className="snapchat-icon" />
         <div className="header-search">
-          <input type="text" placeholder="Search..." className="search-input" />
+          <input type="search" placeholder="Search..." className="search-input" />
           <FaSearch size={20} color="#000" className="search-icon" />
         </div>
       </div>

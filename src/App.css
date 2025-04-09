@@ -141,6 +141,7 @@ h4{
   left: 0; 
   width: 100vw; 
   padding: 10px;
+  z-index: 1000;
 }
 
 .header-left {
@@ -213,7 +214,7 @@ h4{
 }
 
 .icon-label {
-  font-size: 12px; /* Adjust font size */
+  font-size: 10px; /* Adjust font size */
   color: black; /* Ensure labels are visible against dark background */
   margin-top: 3px; /* Add some space above the label */
 }

@@ -16,14 +16,17 @@
 }
 
 .right-section {
+  gap: 2rem;
+  height: 100vh;
+  padding: 10px 0px;
+}
+.scroll-area{
   overflow-y: auto;
   display: flex;
   flex-direction: column;
-  gap: 2rem;
-  box-sizing: border-box; 
-  height: 100vh;
+  height: 100%;
+  padding-bottom: 30px;
 }
-
 
 .hero-box {
   background-color: #fffc00;
@@ -33,8 +36,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
   gap: 1.5rem;
-  flex:1
+  margin-top: 100px;
 }
 
 .slogan-image {
@@ -45,13 +49,12 @@
 
 .people-image {
   width: 100%;
-  height: 20%;
+  height: 50%;
   object-fit: fill;
   border-radius: 20px;
 }
 
 .middle-content {
-  height: 280px;
   width: 100%;
   background-color: #f9f9f9; 
   display: grid;
