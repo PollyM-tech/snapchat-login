@@ -17,22 +17,23 @@ function App() {
 
 return (
   <>
-    <div className="App">
-      <div className="container">
+    <div className="APP">
+      <div className="Container">
         <div className="left">
           <h1>{welcome.title}</h1>
           <p>{welcome.description}</p>
           <p>{welcome.require}</p>
+          <input type="text" placeholder="Enter your username or email" />
           <button>{welcome.button}</button>
           <p>{welcome.proceed}</p>
-          <img src="/microsoft-logo.png" alt="Microsoft logo" />
-          <p>{welcome.download}</p>
+          <img src="/microsoft-logo.png" alt="Microsoft logo" className="Logo" />
         </div>
         <BodyContent />
       </div>
     </div>
   </>
 );
+
 
 }
 
