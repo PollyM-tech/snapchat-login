@@ -9,10 +9,12 @@ function App() {
 
   return (
     <>
-     <div>
-      {/*!! login goes here */}
-      <BodyContent/>
-     </div>
+      <div className='container'>
+        <div className='left-section'>
+          {/* Login section - to be implemented later */}
+        </div>
+        <BodyContent/>
+      </div>
     </>
   )
 }
