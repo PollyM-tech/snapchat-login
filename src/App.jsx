@@ -1,10 +1,10 @@
 import './App.css'
+import './index.css'
 import BodyContent from './components/content'
 import LogIn from './components/login'
 import React from "react";
 import Navbar from "./components/Navbar"; // Import Navbar
 import Footer from "./components/Footer"; // Import Footer
-import "./App.css"; // Import styles
 
 function App() {
   return (
@@ -15,7 +15,7 @@ function App() {
       {/* Main Content Section */}
       <div className='container'>
         <div className='left-section'>
-          {/* <LogIn/> */}
+          <LogIn/>
         </div>
         <BodyContent/>
       </div>
