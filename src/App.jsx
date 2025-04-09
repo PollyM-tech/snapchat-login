@@ -15,8 +15,8 @@ function App() {
     download: 'Looking for the app? Get it <a href = "https://www.snapchat.com/download">here.</a>',
 }
 
-  return (
-    <>
+return (
+  <>
     <div className="App">
       <div className="container">
         <div className="left">
@@ -25,14 +25,15 @@ function App() {
           <p>{welcome.require}</p>
           <button>{welcome.button}</button>
           <p>{welcome.proceed}</p>
-          <image src = ../public/microsoft-logo.png alt="Microsoft logo" />
+          <img src="/microsoft-logo.png" alt="Microsoft logo" />
           <p>{welcome.download}</p>
         </div>
         <BodyContent />
       </div>
     </div>
-    </>
-  )
+  </>
+);
+
 }
 
 ReactDOM.render(welcome, document.getElementById('root'))
