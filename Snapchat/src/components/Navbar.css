@@ -1,0 +1,237 @@
+/* src/components/Navbar.css */
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;  
+    overflow-x: hidden;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0; 
+    width: 100vw; 
+    max-width: 100%;
+    background-color: black; 
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    z-index: 1000; 
+    box-sizing: border-box; 
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+}
+.snapchat-icon {
+    background-color: transparent; /* No background by default */
+    padding: 10px; /* Spacing around the icon */
+    transition: color 0.3s ease, background-color 0.3s ease;
+    border-radius: 0; /* Ensures it's a square */
+    margin-left: 10px;
+}
+
+.snapchat-icon:hover {
+    color: black; /* Icon turns black */
+    background-color: yellow; /* Background becomes yellow */
+    border-radius: 5px; /* Slight rounding */
+}
+
+
+.header-search {
+    display: flex;
+    align-items: center;
+    background: transparent; /* Keep the background transparent */
+    border-radius: 20px; /* Rounded corners */
+    position: relative; /* For positioning the icon */
+}
+
+.search-input {
+    border: 1px solid #ccc; /* Light border for visibility */
+    background: #f1f1f1; /* Background color for the input */
+    outline: none; /* Remove outline */
+    padding: 10px 10px 10px 40px; /* Adjust padding to create space for the icon */
+    width: 100%; /* Full width of the container */
+    font-size: 16px; /* Font size for the input */
+    border-radius: 20px; /* Rounded corners */
+    box-sizing: border-box; /* Ensures padding doesn't affect width */
+    padding-left: 40px; /* Add padding-left to move placeholder text to the right */
+}
+
+.search-icon {
+    position: absolute; /* Positioning the icon */
+    left: 10px; /* Space from the left edge */
+    top: 50%; /* Center vertically */
+    transform: translateY(-50%); /* Adjust for vertical centering */
+    color: gray; /* Color of the icon */
+    font-size: 20px; /* Size of the icon */
+    pointer-events: none; /* Ensure the icon doesn't interfere with clicking */
+}
+
+
+.navbar-center {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.nav-item {
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s; 
+}
+
+.nav-item:hover {
+    color: #ddd; 
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.icon {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.icon-container {
+    display: flex;
+    flex-direction: column; /* Stack icon and label vertically */
+    align-items: center; /* Center align items */
+    text-align: center; /* Center text alignment for labels */
+    position: relative; /* For tooltip positioning */
+    margin: 0 20px; /* Set horizontal margin to increase spacing */
+}
+
+.icon {
+    color: white; /* Change to white for better visibility */
+    margin-bottom: 5px; /* Space between icon and label */
+    padding: 7px;
+}
+
+.icon-label {
+    font-size: 12px; /* Adjust font size */
+    color: black; /* Ensure labels are visible against dark background */
+    margin-top: 3px; /* Add some space above the label */
+}
+.icon-container:hover .icon {
+    color: black ; /* Change to dark gray on hover */
+    background-color: gray; /* No background color */
+    
+}
+
+
+.btn {
+    background: black;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background 0.3s; 
+}
+
+.btn:hover {
+    background: #333; 
+}/* Tooltip Styles */
+.icon-wrapper {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .tooltip {
+    visibility: hidden; /* Hidden by default */
+    width: 60px; /* Tooltip width */
+    background-color: black; /* Tooltip background color */
+    color: white; /* Tooltip text color */
+    text-align: center; /* Center text */
+    border-radius: 5px; /* Rounded corners */
+    padding: 5px; /* Padding */
+    position: absolute; /* Positioning below the button */
+    z-index: 1; /* Ensure it appears above other elements */
+    top: 100%; /* Position below the button */
+    left: 50%; /* Center horizontally */
+    margin-left: -30px; /* Adjust left margin to center */
+    opacity: 0; /* Initial opacity */
+    transition: opacity 0.3s; /* Smooth transition */
+  }
+  
+  .icon-wrapper:hover .tooltip {
+    visibility: visible; /* Show tooltip on hover */
+    opacity: 1; /* Fade in */
+  }
+  
+  /* Button Styling */
+  .dots-icon {
+    cursor: pointer;
+    font-size: 24px;
+  }
+  
+  /* Circular Hover Effect */
+  .icon-hover {
+    display: inline-flex; /* Allows centering */
+    justify-content: center; /* Centers the icon */
+    align-items: center; /* Centers the icon vertically */
+    border-radius: 50%; /* Makes it circular */
+    width: 40px; /* Width of the circular area */
+    height: 40px; /* Height of the circular area */
+    background-color: transparent; /* Default circular background */
+    transition: background-color 0.3s; /* Smooth transition for background color */
+  }
+  
+  .icon-hover:hover {
+    background-color: gray; /* Change background color on hover */
+  }
+  
+  .icon-wrapper:hover .dots-icon {
+    color: lightgray; /* Change icon color on hover */
+  }
+  
+  
+
+.icon-button {
+    background: #f1f1f1; /* Light background color for the button */
+    border: none; /* Remove border */
+    cursor: pointer; /* Change cursor to pointer */
+    display: flex; /* Align items */
+    align-items: center; /* Center align items vertically */
+    justify-content: center; /* Center align items horizontally */
+    width: 60px; /* Width for the circular button */
+    height: 60px; /* Height for the circular button */
+    border-radius: 50%; /* Make it circular */
+    transition: background 0.3s, transform 0.2s; /* Add transition for hover effect */
+}
+
+.icon-button:hover {
+    background: #e0e0e0; /* Slightly darker background on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.icon-label {
+    font-size: 12px; /* Adjust font size */
+    color: black; /* Color for the label text */
+    margin-top: 5px; /* Space above the label */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column; 
+        padding: 10px 5px;
+    }
+
+    .navbar-center {
+        gap: 10px; 
+    }
+
+    .nav-item {
+        font-size: 12px; 
+    }
+}

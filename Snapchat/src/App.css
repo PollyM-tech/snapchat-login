@@ -1,0 +1,111 @@
+/* Navbar.css */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Align items vertically */
+  background-color: white; /* Background color */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.header-left {
+  display: flex;
+  align-items: center; /* Center items vertically */
+}
+
+.header-search {
+  display: flex;
+  align-items: center; /* Center search bar vertically */
+  margin-left: 10px; /* Space between logo and search */
+  position: relative; /* For positioning the icon */
+}
+
+.search-input {
+  padding: 10px 10px; /* Vertical and horizontal padding */
+  padding-left: 40px; /* Ensure space for the icon */
+  border: 1px solid #ccc; /* Light border for visibility */
+  border-radius: 20px; /* Rounded corners */
+  height: 30px; /* Set height for uniformity */
+  width: 100%; /* Full width of the container */
+  font-size: 16px; /* Font size for the input */
+  background: #f1f1f1; /* Light background color */
+  outline: none; /* Remove outline */
+}
+
+.search-icon {
+  position: absolute; /* Positioning the icon */
+  left: 10px; /* Space from the left edge */
+  top: 50%; /* Center vertically */
+  transform: translateY(-50%); /* Adjust for vertical centering */
+  color: gray; /* Color of the icon */
+  font-size: 20px; /* Size of the icon */
+  pointer-events: none; /* Ensure the icon doesn't interfere with clicking */
+}
+
+.header-icons {
+  display: flex;
+  align-items: center; /* Center icons vertically */
+}
+
+.icon {
+  margin: 0 5px; /* Reduced space between icons */
+}
+
+.header-buttons {
+  display: flex;
+  align-items: center; /* Center buttons vertically */
+}
+
+.btn {
+  background: black;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 20px;
+  margin-left: 10px; /* Space between buttons */
+  cursor: pointer;
+}
+
+/* New styles to ensure footer is at the bottom of the page */
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Make sure the container takes full height */
+}
+
+.main-content {
+  flex: 1; /* Allow the content to take all available space */
+  padding: 20px;
+}
+footer {
+  margin-top: auto; /* Push footer to the bottom */
+  width: 100%;
+  background-color: black;
+  color: white;
+  padding: 2px;
+  text-align: center;
+  position: relative;
+  display: flex;
+  justify-content: center; /* Centers items horizontally */
+  align-items: flex-start; /* Centers items vertically */
+}
+
+footer p {
+  margin: 0;
+  color: white; /* Text color set to white */
+}
+
+footer a {
+  color: yellow; /* Set the link text color to yellow */
+  text-decoration: underline;
+}
+
+footer a:hover {
+  opacity: 0.8;
+}
+
+footer .icon {
+  color: yellow; /* Set icon color to yellow */
+  padding: 0px; /* This adds a bit of space around the icons */
+  margin: 0px; /* Reduced space between icons */
+}
